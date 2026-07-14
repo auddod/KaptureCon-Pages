@@ -1,0 +1,158 @@
+@media screen and (min-width: 915px) {
+
+/*-------------------------------------------------------*/
+/* FAQ sections */  
+    
+    .header-rectangle {
+        background-color: #E55A94;
+        height: 28vw;
+        width: 100%;
+        position: relative; /* Allows absolute positioning within */
+        display: flex;
+        justify-content: left;
+    }
+    .header-blob {
+        position: absolute; /* Allows precise placement */
+        top: 0;
+        right: 0; /* Aligns to the right */
+        height: 100%; /* Matches the height of the header */
+        width: auto; /* Maintains aspect ratio */
+    }
+    
+    .faq-content {
+        position: relative; /* Ensures it's on top of the background */
+        text-align: left; /* Aligns text to the left */
+        max-width: 70%; /* Optional: limits the text width */
+        z-index: 1;
+        padding-left: 7vw;
+        padding-top: 5vw;
+    }
+    
+    .faq-title {
+        color: white;
+        font-weight: 700;
+        font-size: 8vw;
+        margin-bottom: 1rem; /* Space between title and description */
+    }
+    
+    .faq-description {
+        color: white;
+        font-weight: 600;
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+
+    .content-rectangle {
+        background-color: black;
+        height: auto;
+        width: 100%
+    }
+    .main-content {
+        position: relative;
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    .main-header {
+        color: white;
+        font-size: 4vw;
+        font-weight: 700;
+        padding-bottom: 1vw;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .faq-item {
+        display: block;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .faq-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Ensures space between question and arrow */
+        font-weight: 650;
+        font-size: 1.75vw;
+        gap: 10px; /* Optional, adds space between elements */
+    }
+    
+    .faq-question {
+        max-width: 90%; /* Restrict the width of the question */
+        text-align: left; /* Align text to the left */
+        margin: 0; /* Remove any default margin */
+        word-wrap: break-word; /* Allow wrapping to the next line */
+        flex: 1; /* Ensure it takes up available space */
+    }
+    
+    .toggle-button {
+        cursor: pointer;
+        width: 5vw;
+        height: 5vw;
+        flex-shrink: 0; /* Prevent the arrow from shrinking */
+        margin-left: auto; /* Push the arrow to the far right */
+    }
+    
+    .faq-answer {
+        font-size: 1.5vw;
+        font-weight: 400;
+        color: #E55A94;
+        display: none;
+	padding: 1vw 4vw 1vw;
+    }
+  
+    .faq-answer a {
+	color: white;
+	text-decoration: underline;
+    }    
+    
+    .faq-answer a:hover {
+	color: #df9ab2;
+    }
+    .white-line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin: 10px 0;
+    }
+
+    .kapture-rectangle{
+        background-color: white;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        text-align: center;
+    }
+
+    .kapture-footer {
+        width: 70%;
+    }
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 272px;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4.5vw;
+}
+.exp-main-content img {
+        min-width: 11.1vw;
+}
+
+}

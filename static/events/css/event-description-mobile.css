@@ -1,0 +1,288 @@
+@media screen and (max-width: 913px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Lexend';
+            font-style: normal;
+            text-decoration: none;
+        }
+    
+        html {
+        scroll-behavior: smooth;
+        }
+    
+        body {
+        background-image: url("../images/event-description/event-background.png");
+        background-color: white;
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: contain;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+    
+        .logo-header {
+        width: 100%;
+        padding-top: 5vh;
+        display: flex;
+        margin: 0 auto;
+        align-items: center; /* vertically align images if needed */
+        justify-content: center; /* horizontally center */
+        gap: 16px; /* padding between the two images */
+        }
+    
+        .kc-logo {
+        max-height: 50px; 
+        width: auto;
+    
+        }
+        .kc-text {
+        max-height: 25px; 
+        width: auto;
+        }
+    
+        #blackswan-meet-greet, #hohyun-meet-greet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+        padding-left: 5vw;
+        }
+    
+        .blackswan-meet-greet-text, .hohyun-meet-greet-text {
+        flex: 1;
+        text-align: center;
+        max-width: 700px;
+        font-size: 20px;
+        z-index: 2;
+        }
+        .blackswan-meet-greet-text p, .hohyun-meet-greet-text p{
+        font-size: 20px;
+        }
+        .blackswan-meet-greet-text h2, .hohyun-meet-greet-text h2{
+        font-size: 40px;
+        font-weight: 700;
+        }
+    
+        .blackswan-photo-rect, .hohyun-photo-rect {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Optional limit for responsiveness */
+            margin: 0 auto;    /* Center the entire container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 4 / 3; /* Optional: keeps it proportional */
+          }
+          
+          .blackswan-photo-background{
+            position: absolute;
+            width: 78%;
+            height: 89%;
+            background-color: #F0F0F0;
+            top: 67%;
+            left: 45%;
+            transform: translate(-45%, -60%) rotate(15.84deg); /* offset slightly */
+            z-index: 0;
+          }
+
+          .hohyun-photo-background {
+            position: absolute;
+            width: 78%;
+            height: 89%;
+            background-color: #F0F0F0;
+            top: 67%;
+            left: 45%;
+            transform: translate(-47.5%, -60%) rotate(15.84deg); /* offset slightly */
+            z-index: 0;
+          }
+          
+          .blackswan-photo{
+            position: relative;
+            z-index: 1;
+            width: 74%;
+            height: auto;
+            object-fit: contain;
+          }  
+
+          .hohyun-photo-rect img {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 210px;
+            height: auto;
+            transform: translate(-3%, 5%) rotate(15.84deg);
+        }
+    
+        #ampersandone-meet-greet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5vh;
+        }
+
+        .ampersandone-photo-rect {
+            width: 100%;
+            max-width: 600px; /* Set a reasonable max-width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Prevents overflow if image is too large */
+          }
+          
+          .ampersandone-photo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+          }
+          
+    
+        .ampersandone-meet-greet-text {
+        max-width: 90%;
+        z-index: 2;
+        }
+        .ampersandone-meet-greet-text p{
+        font-size: 20px;
+        }
+        .ampersandone-meet-greet-text h2{
+        font-size: 37px;
+        font-weight: 700;
+        }
+    
+        #concert {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        #concert h2 {
+        text-align: center;
+        font-size: 30px;
+        }
+          
+        .lineup-text {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        }
+    
+        .concert-artists {
+        background-color: rgba(229, 90, 148, 0.3); /* 30% opacity pink */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+        .blackswan-box,
+        .ampersandone-box,
+        .hohyun-box {
+        position: relative;
+        padding: 10px;
+        }
+        .artist-box {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            display: block;
+            width: 250px; /* adjust based on your layout */
+            height: auto;
+            position: relative;
+            z-index: 0;
+            }
+
+        .box-label {
+        z-index: 1;
+        position: absolute;
+        font-weight: 700;
+        font-size: 24px;
+        top: 59%;
+        left: 50%; /* <-- Center horizontally */
+        transform: translateX(-50%); /* <-- Adjust to true center */
+        background: linear-gradient(90deg, #E55A94 0%, #3E9DA2 100%);
+        color: #FFFFFF;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    
+        }
+        .artist-socials{
+            z-index: 1;
+            position: absolute;
+            top:72%;
+            left: 50%; /* <-- Center horizontally */
+            transform: translateX(-50%); /* <-- Adjust to true center */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }      
+    
+        .other-events{
+            background-color: #3E9DA2;
+            color: white;
+            border-radius: 45px;
+            font-size: 32px;
+            font-weight: 700;
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px; /* add padding to make room around the text */
+        }
+    
+        section {
+            height: auto;
+            padding: 2rem;
+        }
+    
+        .event-graphic{
+            width: 400px;
+            height: auto;
+            display: block; /* Ensure consistent layout behavior */
+            object-fit: contain;
+            max-width: 100%;  /* optional: keeps it responsive inside its fixed box */
+            max-height: 100%;
+        }  
+        .event-text {
+            width: 100%;
+        }
+        .event-title {
+            padding-bottom: 2vh;
+            font-size: 37px;
+        }
+        .event-desc {
+            font-size:20px;
+        }
+    
+        #hohyun-QnA,
+        #kpop-dance-competition,
+        #audrey-lane-workshop,
+        #analisse-workshop,
+        #michael-workshop,
+        #random-play-dance,
+        #artist-alley-sponsor-tables,
+        #variety-games,
+        #fashion-show,
+        #trivia,
+        #kpop-topics,
+        #karaoke {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8vw;
+        }
+
+
+}

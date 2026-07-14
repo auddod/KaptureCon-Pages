@@ -1,0 +1,296 @@
+@media screen and (max-width: 915px) {
+
+    /*------------------------*/
+
+
+    body {
+        background-image: url("../images/schedule-background.png");
+        background-color: white;
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: contain;
+    }
+
+
+    .logo-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .kc_logo {
+        position: relative;
+        width: 15.73vw;
+        height: auto;
+	margin-right: 1vw;
+
+    }
+
+    .kapturecon_logo {
+        position: relative;
+        width: 50.78vw;
+        height: auto;
+
+    }
+
+    .text-header {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .event-calendar {
+        position: relative;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 9vw;
+	text-align: center;
+        line-height: 100%;
+        letter-spacing: 0%;
+	margin: 6vw 0vw;
+
+
+    }
+
+    .event-descript {
+        position: relative;
+        width: auto;
+        height: auto;
+        font-family: Lexend;
+        font-weight: 400;
+        font-size: 5.25vw;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .wrapper-wrapper {
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        /* centers the wrapper horizontally */
+	flex-direction: column;
+	align-items: center;
+	padding: 0vw 5vw;
+	margin: 25vw 0vw;
+    }
+
+    .date {
+        position: absolute;
+        top: -40px;
+        /* adjust to overlap nicely */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 75vw;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-width: 1px;
+        font-family: Lexend;
+        font-weight: bold;
+        font-size: 6.5vw;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: white;
+        background-color: #3E9DA2;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        border-radius: 20px;
+        background-color: black;
+        border: 5px solid #3E9DA2;
+	display: flex;
+	width: 100%;
+	padding: 4.5vw 3.6vw;
+	gap: 3vw;
+	flex-direction: column;
+	padding-top: 17vw;
+    }
+
+    .pink-column {
+        display: flex;
+        flex-direction: column;
+        background-color: #E55A94;
+	min-width: 13vw;
+	padding: 7vw 5vw;
+        border-radius: 25px;
+    }
+
+
+    .green-column {
+        display: flex;
+        flex-direction: column;
+        background-color: #3E9DA2B2;
+	width: 100%;
+	padding: 7vw 5vw;
+        border-radius: 25px;
+    }
+
+    .column-label {
+        z-index: 1;
+        background-color: #3E9DA2;
+        color: white;
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        font-weight: 700;
+        font-size: 6.5vw;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pink-hour-block,
+    .green-hour-block {
+        border: 2px solid #3E9DA2;
+        background-color: #FFFFFFB2;
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+	height: auto;
+	flex-direction: column;
+	font-size: 6vw;
+	padding: 6vw 0vw;
+    }
+
+    .pink-hour-block:hover {
+        background-color: #3E9DA2;
+        color: white;
+    }
+
+    .green-hour-block:hover {
+        background-color: #E55A94;
+        color: white;
+    }
+
+    .pink-half-hour-block,
+    .green-half-hour-block {
+        border: 2px solid #3E9DA2;
+        background-color: #FFFFFFB2;
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+	flex-direction: column;
+	height: auto;
+	font-size: 6vw;
+	padding: 5vw 0vw;
+    }
+
+    .pink-half-hour-block:hover {
+        background-color: #3E9DA2;
+        color: white;
+    }
+
+    .green-half-hour-block:hover {
+        background-color: #E55A94;
+        color: white;
+    }
+
+
+    .green-forty-block {
+        border: 2px solid #3E9DA2;
+        background-color: #FFFFFFB2;
+        color: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        height: auto;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+	flex-direction: column;
+	font-size: 6vw;
+        padding: 7vw 0vw;
+    }
+
+    .green-forty-block:hover, 
+    .green-one-half-hour-block:hover {
+        background-color: #E55A94;
+        color: white;
+    }
+
+    .pink-one-half-hour-block, 
+    .green-one-half-hour-block {
+        border: 2px solid #3E9DA2;
+        background-color: #FFFFFFB2;
+        color: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin-bottom: 10%;
+        height: auto;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        flex-direction: column;
+        font-size: 6vw;
+        padding: 9vw 0vw;
+    }
+
+    .pink-one-half-hour-block:hover {
+        background-color: #3E9DA2;
+        color: white;
+    }
+
+    .big-block {
+        border: 2px solid #3E9DA2;
+        background-color: #FFFFFFB2;
+        color: black;
+        text-align: center;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        height: 100vw;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+	flex-direction: column;
+	gap: 4vw;
+	padding: 0vw 1vw;
+	font-size: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .big-block:hover {
+        background-color: #3E9DA2;
+        color: white;
+    }
+
+
+
+.hohyun-mg {
+	margin-bottom: 5vw;
+}	
+
+
+
+
+}

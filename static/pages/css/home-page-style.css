@@ -1,0 +1,1642 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lexend';
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA SMALL*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 1vh;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 100%;
+}
+.event-sponsors {
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 65px;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 18.75;
+	line-height: 22.5px;
+	margin-bottom: 20px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.concert-location {
+	position: relative;
+	top: 10px;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+	background-color: #B2B3B3;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	padding: 0px 0px 30px 0px;	
+}
+
+.artists-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.artists-icons {
+    display: flex;
+	flex-direction: column;
+    justify-content: center; 
+    gap: 20px; 
+    width: 195px;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.artists-post {
+	flex:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+
+}
+
+
+.black-outline {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.artist-post-img {
+    position: relative;
+    width: 81%; /* Adjust this percentage to fit inside the outline */
+    aspect-ratio: 1 / 1;
+    z-index: 2; /* Ensure it sits below the outline */
+    display: block; /* Ensure it is treated as a block element */
+    margin: 8.5% auto 0px auto; /* Center it horizontally */
+	overflow: hidden;
+	border-radius: 5px; /* Rounds the corners */
+	object-fit: cover;
+}
+
+
+.artist-label {
+	position: relative;
+	width: 70%; /* Adjust width as needed */
+	max-width: 550px; /* Prevents it from being too wide */
+	background: black; /* Gradient from left to right */
+	color: white; /* White text */
+	text-align: center; /* Centers the text */
+	font-size: clamp(14px, 2vw, 18px); /* Adjust text size */
+	font-weight: 700; /* Makes the text stand out */
+	margin: -40px auto 0 auto; /* Centers the box horizontally */
+	z-index: 3;
+}
+
+.artist-social-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 50%;
+	height: auto;
+	margin: 30px;
+	gap: 3px;
+}
+
+.artist-social-icons img {
+	width: 28px;
+	height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 18.75px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+	padding: 18px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+}
+.exp-main-content img {
+        width: 45px;
+}
+
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE SMALL*/
+
+@media screen and (min-width: 576px) and (max-width: 767.99px){
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 491px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 1vh;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 100%;
+}
+.event-sponsors {
+	font-weight: 700;
+	font-size: 6.2vw;
+	line-height: 65px;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 36px;
+	margin-bottom: 20px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+	gap: 45px;
+}
+.concert-location {
+	position: relative;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+	background-color: #B2B3B3;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	padding: 0px 0px 30px 0px;	
+}
+
+.artists-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 31.5px;
+	padding-bottom: 31.5px;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.artists-icons {
+    display: flex;
+	flex-direction: row;
+    justify-content: center; 
+    gap: 20px; 
+    width: 195px;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.artists-post {
+	flex:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+
+}
+
+
+.black-outline {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.artist-post-img {
+    position: relative;
+    width: 81%; /* Adjust this percentage to fit inside the outline */
+    aspect-ratio: 1 / 1;
+    z-index: 2; /* Ensure it sits below the outline */
+    display: block; /* Ensure it is treated as a block element */
+    margin: 8.5% auto 0px auto; /* Center it horizontally */
+	overflow: hidden;
+	border-radius: 5px; /* Rounds the corners */
+	object-fit: cover;
+}
+
+
+.artist-label {
+	position: relative;
+	width: 70%; /* Adjust width as needed */
+	max-width: 550px; /* Prevents it from being too wide */
+	background: black; /* Gradient from left to right */
+	color: white; /* White text */
+	text-align: center; /* Centers the text */
+	font-size: clamp(14px, 2vw, 18px); /* Adjust text size */
+	font-weight: 700; /* Makes the text stand out */
+	margin: -40px auto 0 auto; /* Centers the box horizontally */
+	z-index: 3;
+}
+
+.artist-social-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 50%;
+	height: auto;
+	margin: 30px;
+	gap: 3px;
+}
+
+.artist-social-icons img {
+	width: 28px;
+	height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+	padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 66px;
+}
+
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE MEDIUM*/
+
+@media screen and (min-width: 768px) and (max-width: 991.99px){
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 488px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 1vh;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 100%;
+}
+.event-sponsors {
+	font-weight: 700;
+	font-size: 6.2vw;
+	line-height: 65px;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+	margin-bottom: 20px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+	gap: 45px;
+}
+.concert-location {
+	position: relative;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+	background-color: #B2B3B3;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	padding: 0px 0px 60px 0px;	
+}
+
+.artists-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 38.5px;
+	padding-bottom: 38.5px;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.artists-icons {
+    	display: flex;
+	flex-direction: row;
+    	justify-content: center; 
+    	gap: 37px; 
+    	width: 195px;
+    	max-width: 1200px; 
+    	margin: auto;
+}
+
+.artists-post {
+	flex:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+
+}
+
+
+.black-outline {
+    position: absolute;
+    width: 105%;
+    z-index: 1;
+}
+
+.artist-post-img {
+    position: relative;
+    width: 85%; /* Adjust this percentage to fit inside the outline */
+    aspect-ratio: 1 / 1;
+    z-index: 2; /* Ensure it sits below the outline */
+    display: block; /* Ensure it is treated as a block element */
+    margin: 8.5% auto 0px auto; /* Center it horizontally */
+	overflow: hidden;
+	border-radius: 5px; /* Rounds the corners */
+	object-fit: cover;
+}
+
+
+.artist-label {
+	position: relative;
+	width: 70%; /* Adjust width as needed */
+	max-width: 550px; /* Prevents it from being too wide */
+	background: black; /* Gradient from left to right */
+	color: white; /* White text */
+	text-align: center; /* Centers the text */
+	font-size: clamp(14px, 2vw, 18px); /* Adjust text size */
+	font-weight: 700; /* Makes the text stand out */
+	margin: -40px auto 0 auto; /* Centers the box horizontally */
+	z-index: 3;
+}
+
+.artist-social-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 50%;
+	height: auto;
+	margin: 25px 30px;
+	gap: 3px;
+}
+
+.artist-social-icons img {
+	width: 28px;
+	height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+	padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE LARGE*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px){
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 500px;
+	flex-direction: row;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 10px;
+	right: 10%;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 100%;
+}
+.event-sponsors {
+	font-weight: 700;
+	font-size: 6.2vw;
+	line-height: 65px;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+	gap: 45px;
+}
+.concert-location {
+	position: relative;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+	background-color: #B2B3B3;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	padding: 0px 0px 60px 0px;	
+}
+
+.artists-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.artists-icons {
+    display: flex;
+	flex-direction: row;
+    justify-content: center; 
+    gap: 90px; 
+    width: 195px;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.artists-post {
+	flex:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+
+}
+
+
+.black-outline {
+    position: absolute;
+    width: 123%;
+    z-index: 1;
+}
+
+.artist-post-img {
+    position: relative;
+    width: 100%; /* Adjust this percentage to fit inside the outline */
+    aspect-ratio: 1 / 1;
+    z-index: 2; /* Ensure it sits below the outline */
+    display: block; /* Ensure it is treated as a block element */
+    margin: 8.5% auto 0px auto; /* Center it horizontally */
+	overflow: hidden;
+	border-radius: 5px; /* Rounds the corners */
+	object-fit: cover;
+}
+
+
+.artist-label {
+	position: relative;
+	width: 70%; /* Adjust width as needed */
+	max-width: 550px; /* Prevents it from being too wide */
+	background: black; /* Gradient from left to right */
+	color: white; /* White text */
+	text-align: center; /* Centers the text */
+	font-size: clamp(14px, 2vw, 18px); /* Adjust text size */
+	font-weight: 700; /* Makes the text stand out */
+	margin: -40px auto 0 auto; /* Centers the box horizontally */
+	z-index: 3;
+}
+
+.artist-social-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 50%;
+	height: auto;
+	margin: 25px 30px;
+	gap: 3px;
+}
+
+.artist-social-icons img {
+	width: 36px;
+	height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+	padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+
+}
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA LARGE*/
+
+@media screen and (min-width: 1200px) and (max-width: 1499.99px){
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 500px;
+	flex-direction: row;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 10px;
+	right: 10%;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 100%;
+}
+.event-sponsors {
+	font-weight: 700;
+	font-size: 6.2vw;
+	line-height: 65px;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 30px;
+	gap: 45px;
+}
+.concert-location {
+	position: relative;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+	background-color: #B2B3B3;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	padding: 0px 0px 60px 0px;	
+}
+
+.artists-title {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.artists-icons {
+    display: flex;
+	flex-direction: row;
+    justify-content: center; 
+    gap: 90px; 
+    width: 195px;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.artists-post {
+	flex:1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+
+}
+
+
+.black-outline {
+    position: absolute;
+    width: 123%;
+    z-index: 1;
+}
+
+.artist-post-img {
+    position: relative;
+    width: 100%; /* Adjust this percentage to fit inside the outline */
+    aspect-ratio: 1 / 1;
+    z-index: 2; /* Ensure it sits below the outline */
+    display: block; /* Ensure it is treated as a block element */
+    margin: 8.5% auto 0px auto; /* Center it horizontally */
+	overflow: hidden;
+	border-radius: 5px; /* Rounds the corners */
+	object-fit: cover;
+}
+
+
+.artist-label {
+	position: relative;
+	width: 70%; /* Adjust width as needed */
+	max-width: 550px; /* Prevents it from being too wide */
+	background: black; /* Gradient from left to right */
+	color: white; /* White text */
+	text-align: center; /* Centers the text */
+	font-size: clamp(14px, 2vw, 18px); /* Adjust text size */
+	font-weight: 700; /* Makes the text stand out */
+	margin: -40px auto 0 auto; /* Centers the box horizontally */
+	z-index: 3;
+}
+
+.artist-social-icons {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+	width: 50%;
+	height: auto;
+	margin: 25px 30px;
+	gap: 3px;
+}
+
+.artist-social-icons img {
+	width: 36px;
+	height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+	padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA-EXTRA LARGE*/
+
+@media screen and (min-width: 1500px) {
+
+/*------------------------------------------------------*/
+
+/* Transitions */
+
+@keyframes fadeInUp {
+	0% {
+	  transform: translateY(100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	  }
+	  100% {
+		transform: translateY(0%);
+		opacity: 1;
+	  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Logo */
+
+.top-logo {
+	width: 100%;
+	height: 70vw;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 4vw;
+}
+.top-gradient {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-background {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	animation: 3s fadeIn;
+}
+.logo-icon {
+	width: 33vw;
+	height: 30vw;
+	position: absolute;
+	animation: 1.5s fadeInUp;
+}	
+	
+/*------------------------*/
+/* Headliner Info */
+
+.container-headline {
+	        background-image: url('../images/homepage/homepage_fillerpic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+	position: relative;
+        width: 100%;
+        height: 550px;
+	flex-direction: row;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+}
+.headline-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	gap: 10px;
+	right: 16%;
+}
+.headline-event {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+}
+.head-sub-info {
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 21.px;
+}
+.location-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	top: 15px;
+	
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 30px;
+	gap: 45px;
+}
+.concert-location {
+	position: relative;
+}
+.tickets-button {
+	width: 73vw;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #5D5D5D;
+	color: white;
+
+	font-size: 135%;
+	font-weight: 600;
+	line-height: 45px;
+}
+.tickets-button:hover {
+	background-color: #878787;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------*/
+/* Artists */
+
+.container-artists {
+	position: relative;
+        background-color: #B2B3B3;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        padding: 0px 0px 95px 0px;
+}
+
+.artists-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 50px;
+        font-size: 45.7px;
+        font-weight: 700;
+        text-align: center;
+}
+
+.artists-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 166px;
+        margin: auto;
+}
+
+.artists-post {
+        flex:1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+}
+
+
+.black-outline {
+        position: absolute;
+        width: 300px;
+        z-index: 1;
+}
+.artist-post-img {
+        position: relative;
+        width: 250px;
+        aspect-ratio: 1 / 1;
+        z-index: 2;
+        display: block;
+        margin: 24.8px auto 0px auto;
+        overflow: hidden;
+        border-radius: 4.9px;
+        object-fit: cover;
+}
+
+
+.artist-label {
+        position: relative;
+        width: 200px;
+        background: black;
+        color: white;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 700;
+        margin-inline: auto;
+        margin-top: -41px;
+        z-index: 3;
+}
+.artist-social-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        height: auto;
+        margin: 30px;
+        gap: 3.3px;
+}
+
+.artist-social-icons img {
+        width: 45.7px;
+        height: auto;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 44.1px;
+        font-weight: 700;
+        line-height: 99.8px;
+        text-align: center;
+        padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 41.6px;
+}
+.exp-main-content img {
+        width: 108.1px;
+}
+
+
+}

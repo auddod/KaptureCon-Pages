@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYV78P86S7"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CYV78P86S7');
+        </script>
+        <title>KaptureCon</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/pages/css/top-bar.css">
+	<link rel="stylesheet" href="../static/pages/css/footer.css">
+
+	<script src="../static/pages/js/sidebar-open-close.js"></script>
+	<script src="../static/pages/js/nav-buttons.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="../static/pages/images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        
+	<link rel="stylesheet" href="../static/events/css/event-description.css">
+	<link rel="stylesheet" href="../static/events/css/event-description-mobile.css">
+
+</head>
+
+<body>
+
+<!-- TOP BAR STARTS-->
+	<div class="top-container">
+                <header class="nav-bar">
+                        <div class="nav-buttons">
+				<div class="main-logo"><a href="../index.html"><img class="main-logo-img" src="../static/pages/images/KaptureCon-logo.svg" alt="Logo"></a></div>
+				<div class="menu-bar" onclick="openSidebar()"><img src="../static/pages/images/menu-bar.png" alt="Menu Bar Icon" width="50"></div>
+                                <div class="buttons">
+					<div class="nav-btn"><a href="../index.html">Home</a></div>
+					<div class="nav-btn"><a href="../tickets.html">Tickets</a></div>
+					<div class="nav-btn event-btn"><a href="../events.html">Events &#x25BE;</a>
+                                                <div class="dropdown-content">
+                                                        <a href="schedule.html">Event Calendar</a>
+                                                        <a href="event-description.html">Event Details</a>
+                                                </div>
+					</div>
+					<div class="nav-btn extra-links-btn"><a href="../about.html">About &#x25BE;</a>
+						<div class="dropdown-content">
+							<a href="../about.html">About Us</a>
+							<a href="../about/private-policy.html">Privacy Policy</a>
+							<a href="../about/terms-conditions.html">Terms & Conditions</a>
+<!--							<a href="#">Cookies Notice</a>
+							<a href="#">Contact Info</a>
+-->							<a href="../about/FAQ.html">FAQ</a>
+						</div>
+					</div>
+					<div class="nav-btn"><a href="../merch.html">Merch</a></div>
+                                </div>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/people/KaptureCon/61565751746950/?profile_tab_item_selected=about"><img src="../static/pages/images/facebook-icon.svg" alt="Facebook icon"></a>
+                                        <a href="https://www.instagram.com/kapturecon/"><img src="../static/pages/images/insta-icon.svg" alt="Instagram icon"></a>
+                                        <a href="https://www.youtube.com/channel/UC3f2uINnipZ0f2Ry10FdnpQ"><img src="../static/pages/images/youtube-icon.svg" alt="Youtube icon"></a>
+                                        <a href="https://www.tiktok.com/@kapturecon"><img src="../static/pages/images/tiktok-icon.svg" alt="Tiktok icon"></a>
+                                        <a href="https://x.com/KaptureCon"><img src="../static/pages/images/x-icon.svg" alt="x icon"></a>
+                                </div>
+                        </div>
+                </header>
+
+                <div class="sidebar" id="sidebar">
+                        <div class="top-panel">
+				<div class="close-button" id="close-button" onclick="closeSidebar()">&times;</div>
+                        </div>
+                        <div class="sidebar-links">
+				<div class="side-btn"><a href="../index.html">Home</a></div>
+                                <div class="side-btn"><a href="../tickets.html">Tickets</a></div>
+                                <div class="side-btn event-side-links"><a href="../events.html">Events</a>
+                                	<div class="side-dropdown-content">
+	                                       	<a href="schedule.html">Event Calendar</a>
+                                		<a href="event-description.html">Event Details</a>
+                                	</div>
+				</div>
+                                <div class="side-btn side-extra-links"><a href="../about.html">About</a>
+					<div class="side-dropdown-content">
+                                                        <a href="../about/private-policy.html">Privacy Policy</a>
+                                                        <a href="../about/terms-conditions.html">Terms & Conditions</a>
+<!--                                                        <a href="#">Cookies Notice</a>
+                                                        <a href="#">Contact Info</a>
+-->                                                        <a href="../about/FAQ.html">FAQ</a>
+					</div>
+				</div>
+				<div class="side-btn"><a href="../merch.html">Merch</a></div>
+                                <div class="sidebar-social-icons">
+					<a href="https://www.facebook.com/people/KaptureCon/61565751746950/?profile_tab_item_selected=about"><img src="../static/pages/images/facebook-icon.svg" alt="Facebook icon"></a>
+                                        <a href="https://www.instagram.com/kapturecon/"><img src="../static/pages/images/insta-icon.svg" alt="Instagram icon"></a>
+                                        <a href="https://www.youtube.com/channel/UC3f2uINnipZ0f2Ry10FdnpQ"><img src="../static/pages/images/youtube-icon.svg" alt="Youtube icon"></a>
+                                        <a href="https://www.tiktok.com/@kapturecon"><img src="../static/pages/images/tiktok-icon.svg" alt="Tiktok icon"></a>
+                                        <a href="https://x.com/KaptureCon"><img src="../static/pages/images/x-icon.svg" alt="x icon"></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="dark-background" id="dark-background"></div>
+	</div>
+<!-- TOP BAR ENDS -->
+<!-- MIDDLE SECTION STARTS -->
+	<div class="block-body">
+		
+
+<body>
+    <div class="logo-header">
+        <img class="kc-logo" src="../static/events/images/event-description/KClogo.svg">
+        <img class="kc-text" src="../static/events/images/event-description/KCtext.svg">
+    </div>
+
+  <section id="blackswan-meet-greet">
+    <div class="blackswan-meet-greet-text">
+        <h2>BLACKSWAN FANMEET</h2>
+        <p>Get ready to meet the global sensation <b>BLACKSWAN</b> up close and personal! 
+            Join us for an exclusive Meet & Greet with the powerhouse K-pop girl group on
+             <b>Friday, May 31st,</b> from <b>12:10 PM to 1:00 PM</b>. 
+            Whether you're a long-time LUMINA or new to their music, this is your chance to connect with 
+            the members, snap a quick photo, and share your love and support in person</p>
+    </div>
+    <div class="blackswan-photo-rect">
+        <div class="blackswan-photo-background"></div>
+        <img class="blackswan-photo" src="../static/events/images/event-description/blackswan.svg">
+    </div>
+  </section>
+
+  <section id="ampersandone-meet-greet">
+    <div class="ampersandone-photo-rect">
+        <img class="ampersandone-photo" src="../static/events/images/event-description/ampers&amp;one.png">
+    </div>
+    <div class="ampersandone-meet-greet-text">
+        <h2>AMPERS&ONE FANMEET</h2>
+        <p>Join us for a special Polaroid Photo Meet & Greet with AMPERS&ONE on Friday,
+             May 31st, from <b>1:10 PM to 2:20 PM!</b> Here’s your chance to take a Polaroid photo
+              with the rising K-pop sensation and create a memory you'll treasure forever.</p>
+    </div>
+  </section>
+
+  <section id="hohyun-meet-greet">
+    <div class="hohyun-meet-greet-text">
+        <h2>HOHYUN FANMEET</h2>
+        <p>Get the rare chance to meet Hohyun face-to-face in this exclusive Meet & Greet session! Fans will have a brief one-on-one moment to chat, 
+            take a photo, and make a memory with the artist. Spots are limited and will be offered on a first come, first serve basis, so come early to 
+            secure your time with Hohyun!</p>
+    </div>
+    <div class="hohyun-photo-rect">
+        <div class="hohyun-photo-background"></div>
+        <img class="hohyun-photo" src="../static/events/images/event-description/hohyun.png">
+    </div>
+  </section>
+
+  <section id="concert">
+    <h2>CONCERT</h2>
+    <h2>DAR CONSTITUTION HALL</h2>
+    <h2>6:30 PM - 9:30 PM</h2>
+    <h2 class="lineup-text">LINE UP</h2>
+    <div class="concert-artists">
+        <div class="blackswan-box">
+            <img class="artist-box" src="../static/events/images/event-description/blackswan-outline.svg">
+            <div class="box-label">BLACKSWAN</div>
+            <div class="artist-socials">
+                <a href="https://www.instagram.com/blackswan___official/?hl=en" class="insta-button">
+                    <img src="../static/events/images/event-description/instagram-button.svg" alt="instagram icon" class="insta-icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UCJFFWX6gUh1fdcGFGSvthQg" class="yt-button">
+                    <img src="../static/events/images/event-description/youtube-button.svg" alt="youtube button" class="yt-icon">
+                </a>
+                <a href="https://www.tiktok.com/@blackswan__official?lang=en" class="tt-button">
+                    <img src="../static/events/images/event-description/tiktok-button.svg" alt="tiktok button" class="tt-icon">
+                </a>
+                <a href="https://twitter.com/blackswan_drent" class="x-button">
+                    <img src="../static/events/images/event-description/x-button.svg" alt="x button" class="x-icon">
+                </a>
+            </div>
+        </div>
+        <div class="ampersandone-box">
+            <img class="artist-box" src="../static/events/images/event-description/ampers&amp;one-outline.svg">
+            <div class="box-label">AMPERS&ONE</div>
+            <div class="artist-socials">
+                <a href="https://www.instagram.com/ampersandone_official/?hl=en" class="insta-button">
+                    <img src="../static/events/images/event-description/instagram-button.svg" alt="instagram icon" class="insta-icon">
+                </a>
+                <a href="https://www.youtube.com/@AMPERSANDONE" class="yt-button">
+                    <img src="../static/events/images/event-description/youtube-button.svg" alt="youtube button" class="yt-icon">
+                </a>
+                <a href="https://www.tiktok.com/@ampersandone?lang=en" class="tt-button">
+                    <img src="../static/events/images/event-description/tiktok-button.svg" alt="tiktok button" class="tt-icon">
+                </a>
+                <a href="https://x.com/_AMPERSANDONE_" class="x-button">
+                    <img src="../static/events/images/event-description/x-button.svg" alt="x button" class="x-icon">
+                </a>
+            </div>
+        </div>
+        <div class="hohyun-box">
+            <img class="artist-box" src="../static/events/images/event-description/hohyun-outline.svg">
+            <div class="box-label">HOHYUN</div>
+            <div class="artist-socials">
+                <a href="https://www.instagram.com/itshohyun/?hl=en" class="insta-button">
+                    <img src="../static/events/images/event-description/instagram-button.svg" alt="instagram icon" class="insta-icon">
+                </a>
+                <a href="https://www.youtube.com/@HOHYUN" class="yt-button">
+                    <img src="../static/events/images/event-description/youtube-button.svg" alt="youtube button" class="yt-icon">
+                </a>
+                <a href="https://www.tiktok.com/@itshohyun" class="tt-button">
+                    <img src="../static/events/images/event-description/tiktok-button.svg" alt="tiktok button" class="tt-icon">
+                </a>
+                <a href="https://x.com/itshohyun" class="x-button">
+                    <img src="../static/events/images/event-description/x-button.svg" alt="x button" class="x-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="other-events">OTHER EVENTS</div>
+
+  <section id="hohyun-QnA">
+    <img class="event-graphic" src="../static/events/images/event-description/hohyun-qna.jpg">
+    <div class="event-text">
+        <h2 class="event-title">HOHYUN Q&A</h2>
+        <p class="event-desc">Get up close and personal with special guest Hohyun in this exclusive Q&A session. From his artistic journey to his latest projects, 
+            hear directly from the source. Hohyun will also share his experiences and insights into songwriting and producing his own music. Fans will have the 
+            chance to ask questions and connect with the artist on a deeper level.</p>
+    </div>
+  </section>
+
+  <section id="kpop-dance-competition">
+    <img class="event-graphic" src="../static/events/images/event-description/dance-comp-graphic.png">
+    <div class="event-text">
+        <h2 class="event-title">KPOP DANCE COMPETITION</h2>
+        <p class="event-desc">Get ready to witness jaw-dropping moves and electrifying energy at the K-Pop Dance Competition happening
+            from <b>3:30 PM to 5:00 PM!</b> Watch talented dance crews and solo performers bring 
+            their favorite K-pop choreographies to life on stage in a thrilling showdown of skill, style, and stage presence.</p>
+    </div>
+  </section>
+
+  <section id="audrey-lane-workshop">
+    <img class="event-graphic" src="../static/events/images/event-description/audrey-lane-workshop.png">
+    <div class="event-text">
+        <h2 class="event-title">AUDREY LANE WORKSHOP</h2>
+        <p class="event-desc">Audrey Lane is a 21-year-old dancer based in Los Angeles, USA. She has been featured on Nickelodeon, Disney,
+             Street Woman Fighter 2, and Street Girl Fighter 2. Audrey has also worked with renowned artists like Jennie, Jungkook,
+              Jackson Wang, and Ciara. As an international instructor, she has taught all over the world, working with K-pop groups
+               such as TXT, LE SSERAFIM, and woo!ah!.</p>
+    </div>
+  </section>
+
+  <section id="analisse-workshop">
+    <img class="event-graphic" src="../static/events/images/event-description/analisse-workshop.png">
+    <div class="event-text">
+        <h2 class="event-title">ANALISSE WORKSHOP</h2>
+        <p class="event-desc">Analisse is a highly accomplished professional choreographer and dancer with over 12 years of experience in the
+             industry. Her choreography credits include ILLIT, Ozuna, Maluma, Pitbull, and more. She has also collaborated with renowned artists 
+             such as BTS, Jason Derulo, Chris Brown, Daddy Yankee, and Bad Bunny. Additionally, she has built a combined social media following of
+              over 14 million across her personal and family brand.</p>
+    </div>
+  </section>
+
+  <section id="michael-workshop">
+    <img class="event-graphic" src="../static/events/images/event-description/michael-workshop.png">
+    <div class="event-text">
+        <h2 class="event-title">MICHAEL WORKSHOP</h2>
+        <p class="event-desc">Michael Le has over 10 years of professional choreography experience and a social media following exceeding 50 million.
+             His work includes collaborations with artists like Enhypen, Le Sserafim, and BND, among others. He is now focused on becoming the largest
+              dance creator globally.</p>
+    </div>
+  </section>
+
+  <section id="random-play-dance">
+    <img class="event-graphic" src="../static/events/images/event-description/rpd-photo-2.png">
+    <div class="event-text">
+        <h2 class="event-title">RANDOM PLAY DANCE</h2>
+        <p class="event-desc">Test your reflexes and dance skills in Random Play Dance (RPD), where songs play at random and only the bold stay dancing! 
+            Step up when you know the choreography and show your love for the music. A crowd favorite that's full of fun, spontaneity, and fan energy.
+        </p>
+    </div>
+  </section>
+
+  <section id="artist-alley-sponsor-tables">
+    <img class="event-graphic" src="../static/events/images/event-description/merged-artist-alley-2.png">
+    <div class="event-text">
+        <h2 class="event-title">ARTIST ALLEY / SPONSOR TABLES</h2>
+        <p class="event-desc">Explore creativity and community at our Artists Alley & Sponsor Tables, open all day on Friday, May 31st! <br>
+            Stroll through a vibrant showcase of fan art, crafts, merch, and more created by talented artists and small businesses. Plus, connect with our amazing sponsors,
+             learn about their work, grab some free goodies, and support the people who help make this event possible!<br></p>
+        <h2 class="event-title">Photocard Deco and Trading</h2>
+        <p class="event-desc">Decorate your favorite photocards with stickers, washi tape, and more in our creative deco zone! Then, connect with fellow fans to 
+            trade cards and complete your collection. A fun, relaxing way to personalize your collection and meet new friends.</p>
+    </div>
+  </section>
+
+  <section id="variety-games">
+    <img class="event-graphic" src="../static/events/images/event-description/games-activities-pic.png">
+    <div class="event-text">
+        <h2 class="event-title">K-Pop Idol Variety Games</h2>
+        <p class="event-desc">Step into the spotlight and compete in fun, fast-paced games just like your favorite K-pop idols do on variety shows! 
+            From silly challenges to an organized round of mafia, it’s all about laughter, energy, and fan interaction. Whether you're playing or cheering 
+            from the sidelines, get ready for nonstop entertainment and unforgettable moments.</p>
+    </div>
+  </section>
+
+  <section id="fashion-show">
+    <img class="event-graphic" src="../static/events/images/event-description/pink-dress.png">
+    <div class="event-text">
+        <h2 class="event-title">Fashion Show</h2>
+        <p class="event-desc">Strut your style in the ultimate K-fashion contest where you are the trendsetter! A few days before KaptureCon, we’ll reveal the 
+            theme, giving you time to craft your best look inspired by the theme revealed. During the event, attendees will vote for their favorite outfits, and 
+            the most stylish fans will take home prizes and bragging rights.</p>
+    </div>
+  </section>
+
+  <section id="trivia">
+    <img class="event-graphic" src="../static/events/images/event-description/trivia-pic.png">
+    <div class="event-text">
+        <h2 class="event-title">TRIVIA</h2>
+        <p class="event-desc">Show off your K-pop and K-drama knowledge in a fast-paced trivia game! Compete solo or in teams to answer questions about idols, 
+            lyrics, variety shows, and more. Winners take home bragging rights and maybe even prizes.</p>
+    </div>
+  </section>
+
+  <section id="kpop-topics">
+    <img class="event-graphic" src="../static/events/images/event-description/kpop-topic-pic.jpg">
+    <div class="event-text">
+        <h2 class="event-title">KPOP TOPICS</h2>
+        <p class="event-desc">Join open discussions about trending topics in Korean entertainment, from comeback theories to cultural impact. 
+            Share your thoughts and hear insights from fellow fans. A great way to dive deeper into your fandom and explore different perspectives.</p>
+    </div>
+  </section>
+
+  <section id="karaoke">
+    <img class="event-graphic" src="../static/events/images/event-description/karaoke-pic.png">
+    <div class="event-text">
+        <h2 class="event-title">KARAOKE</h2>
+        <p class="event-desc">Sing your heart out to your favorite K-pop songs! Whether you're performing solo or with friends, it's all about having fun and 
+            celebrating the music. Cheer each other on and create unforgettable memories.</p>
+    </div>
+  </section>
+
+
+	</div>
+
+<!-- MIDDLE SECTION ENDS -->
+<!-- FOOTER STARTS -->
+
+	<div class="footer">
+			<div class="footer-container">
+                        <div class="main-footer-content">
+                                <a href="event-description.html#">
+				<div class="kc-footer-logo">
+					<div class="kc-footer-icon"><img class="kc-footer-icon-img" src="../static/pages/images/footer-KC-icon.svg" alt="KaptureCon BW Logo Icon"></div>
+					<div class="kc-footer-text"><img class="kc-footer-text-img" src="../static/pages/images/footer-KC-text.svg" alt="KaptureCon Bw Logo Text"></div>
+                                </div>
+				</a>
+                                <div class="email-info">
+					<div class="email-icon"><img class="email-icon-img" src="../static/pages/images/email-icon.svg" alt="Email Icon"></div>
+                                        <div class="email-text">hello@kapturecon.com</div>
+                                </div>
+				<div class="extra-footer-text">
+ 					<a href="../about/private-policy.html">Privacy Policy</a><br>
+                                        <a href="../about/terms-conditions.html">Terms & Conditions</a><br>
+<!--                                    <a href="#">Cookies Notice</a><br>
+					<a href="#">Contact Info</a><br>
+-->					<a href="../about/FAQ.html">FAQ</a>
+                                </div>
+                        </div>
+                                <div class="footer-social-icons">
+					<a href="https://www.facebook.com/people/KaptureCon/61565751746950/?profile_tab_item_selected=about"><img src="../static/pages/images/facebook-icon.svg" alt="Facebook icon"></a>
+					<a href="https://www.instagram.com/kapturecon/"><img src="../static/pages/images/insta-icon.svg" alt="Instagram icon"></a>
+					<a href="https://www.youtube.com/channel/UC3f2uINnipZ0f2Ry10FdnpQ"><img src="../static/pages/images/youtube-icon.svg" alt="Youtube icon"></a>
+					<a href="https://www.tiktok.com/@kapturecon"><img src="../static/pages/images/tiktok-icon.svg" alt="Tiktok icon"></a>
+					<a href="https://x.com/KaptureCon"><img src="../static/pages/images/x-icon.svg" alt="x icon"></a>
+                                </div>
+			</div>
+		</div>
+
+<!-- FOOTER ENDS -->
+</body>
+

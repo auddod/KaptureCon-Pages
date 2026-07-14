@@ -1,0 +1,44 @@
+@media screen and (min-width: 914px) {
+
+    .container-terms {
+        background: black;
+    }
+    .header {
+        text-align: center;
+        color: #E55A94;
+    }
+    .text {
+        position: relative;
+        left: 5vw;
+        width: 90%;
+        color: white;
+    }
+    .list {
+        position: relative;
+        left: 2.5vw;
+        width: 90%
+    }
+
+}
+
+@media screen and (max-width: 915px) {
+    .container-terms {
+        background: black;
+    }
+    .header {
+        text-align: center;
+        color: #E55A94;
+    }
+    .text {
+        position: relative;
+        left: 5vw;
+        width: 90%;
+        color: white;
+    }
+
+    .list {
+        position: relative;
+        left: 2.5vw;
+        width: 95%
+    }
+}

@@ -1,0 +1,177 @@
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA SMALL*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;	
+	justify-content: space-between;
+}
+/*
+.cart-stuff {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.cart-icon {
+	height: 2rem;
+	width: auto;
+	display: block;
+	margin-right: 0.5rem;
+}	
+
+#cart-total {
+	font-size: 1.8rem;
+	line-height: 1;
+}
+*/
+.back-arrow {
+	font-size: 48px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE SMALL*/
+
+@media screen and (min-width: 576px) and (max-width: 767.99px){
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;	
+	justify-content: space-between;
+}
+
+.back-arrow {
+	font-size: 61px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE MEDIUM*/
+
+@media screen and (min-width: 768px) and (max-width: 991.99px){
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;	
+	justify-content: space-between;
+}
+
+.back-arrow {
+	font-size: 61px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE LARGE*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px){
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;	
+	justify-content: space-between;
+}
+
+.back-arrow {
+	font-size: 61px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA LARGE*/
+
+@media screen and (min-width: 1200px) and (max-width: 1499.99px) {
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 26px;	
+	justify-content: space-between;
+}
+
+.back-arrow {
+	font-size: 61px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA-EXTRA LARGE*/
+
+@media screen and (min-width: 1500px) {
+
+/*------------------------------------------------------*/
+
+.top-section {
+	display: flex;
+	width: 100%;
+	padding: 10px 13vh;	
+	justify-content: space-between;
+}
+
+.back-arrow {
+	font-size: 61px;
+	color: black;
+}
+.back-arrow:hover {
+	color: #3E9DA2;
+}
+
+}

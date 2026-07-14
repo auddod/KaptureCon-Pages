@@ -1,0 +1,1735 @@
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA SMALL*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 184px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 11px;
+}
+    .kc1-img {
+	position: relative;
+        width: 72px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 93px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 70.5px;
+        height: 11.25px;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 11px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+	padding: 2vw;
+	
+}
+.ticket-info-title {
+ 	font-size: 3.3vw;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.column {
+	width: 155px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 13px;
+}
+.eventgraphic1 {
+	height: 100px;
+	width: 124px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 100px;
+	width: 124px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 98px;
+	height: 57.66px;
+ 	transform: rotate(-9.92deg);
+	position: relative;
+	top: -82.2px;
+    	left: 12.5px;	
+}
+
+.dar-img {
+	width: 98px;
+	height: 57.66px; 
+        transform: rotate(9.92deg);
+	position: relative;
+	right: -13.9px;
+	top: -81.6px;
+}
+h3 {
+	font-size: 12px;
+	margin-bottom: 10.5px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 7px;
+	line-height: 10px;
+	height: 100px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 7px;
+	font-weight: 700;
+	padding: 11px;
+	border-radius: 20px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+.concert-title {
+        position: relative;
+        width: 297;
+        height: 50;
+        top: 1470px;
+        left: 902px;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0%;
+
+}
+.convention-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 170px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+}
+
+.ticket-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 787px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+
+
+}
+
+.divider {
+	width: 100%;
+	height: 8.5vw;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 3vw; 
+	text-align: center;
+	padding: 2.4vw;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 7vw;
+	padding: 10vw;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2vw;
+}
+.base-title {
+	width: 52vw;
+	height: auto;
+	border: 0.35vw #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 2.3vw;
+	line-height: 3.5vw;
+	color: #E55A94;
+	padding: 2vw;
+}
+.ultimate > .base-title {
+	border: 0.35vw solid ;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 2.4vw;
+	gap: 17vw;
+	line-height: 4vw;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 2.3vw;
+	line-height: 3.5vw;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 5vw;
+	padding: 10vw;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4vw;
+}
+.addon-title {
+	width: 52vw;
+	height: auto;
+	border: 0.35vw #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 3vw;
+	line-height: 3.5vw;
+	color: #E55A94;
+	padding: 6vw 0vw 6vw 0vw;;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 2.4vw;
+	gap: 17vw;
+	line-height: 4vw;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE SMALL*/
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 250px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 11px;
+}
+    .kc1-img {
+	position: relative;
+        width: 84px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 105px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 118px;
+        height: auto;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 11px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+	padding: 2vw;
+	
+}
+.ticket-info-title {
+ 	font-size: 20px;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.column {
+	width: 183px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 13px;
+}
+.eventgraphic1 {
+	height: 120px;
+	width: 144px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 120px;
+	width: 144px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 114px;
+	height: 68.66px;
+ 	transform: rotate(-9.92deg);
+	position: relative;
+	top: -98.5px;
+    	left: 14.3px;	
+}
+
+.dar-img {
+	width: 114px;
+	height: 68.66px; 
+        transform: rotate(9.92deg);
+	position: relative;
+	right: -15.9px;
+	top: -98.6px;
+}
+h3 {
+	font-size: 15px;
+	margin-bottom: 10.5px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 10px;
+	line-height: 14px;
+	height: 137px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 7px;
+	font-weight: 700;
+	padding: 11px;
+	border-radius: 20px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+.concert-title {
+        position: relative;
+        width: 297;
+        height: 50;
+        top: 1470px;
+        left: 902px;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0%;
+
+}
+.convention-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 170px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+}
+
+.ticket-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 787px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+
+
+}
+
+.divider {
+	width: 100%;
+	height: 8.5vw;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 3vw; 
+	text-align: center;
+	padding: 2.4vw;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 35px;
+	padding: 50px;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+.base-title {
+	width: 295px;
+	height: auto;
+	border: 2px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 13px;
+	line-height: 14px;
+	color: #E55A94;
+	padding: 11.5px;
+	margin: 10px;
+}
+.ultimate > .base-title {
+	border: 0.35vw solid ;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 14px;
+	gap: 97px;
+	line-height: 23px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 12px;
+	line-height: 19px;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 30px;
+	padding: 55px;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+}
+.addon-title {
+	width: 295px;
+	height: auto;
+	border: 2px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 23px;
+	color: #E55A94;
+	padding: 20px;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 14.8px;
+	gap: 100px;
+	line-height: 24px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE MEDIUM*/
+
+@media screen and (min-width: 768px) and (max-width: 991.99px){
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 378px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 11px;
+}
+    .kc1-img {
+	position: relative;
+        width: 97px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 131px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 158px;
+        height: auto;
+        font-weight: 700;
+        font-size: 17.5px;
+        line-height: 11px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 40px;
+	
+}
+.ticket-info-title {
+ 	font-size: 26px;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 150px;
+}
+.column {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 13px;
+}
+.eventgraphic1 {
+	height: 170px;
+	width: 194px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 170px;
+	width: 194px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 155.3px;
+	height: 97.66px;
+ 	transform: rotate(-10.2deg);
+	position: relative;
+	top: -140px;
+    	left: 18.5px;	
+}
+
+.dar-img {
+	width: 154.3px;
+	height: 99.66px; 
+        transform: rotate(10.2deg);
+	position: relative;
+	right: -21.1px;
+	top: -140.5px;
+}
+h3 {
+	font-size: 18px;
+	margin-bottom: 11.5px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 12px;
+	line-height: 17px;
+	height: 167px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 15px;
+	border-radius: 20px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+.concert-title {
+        position: relative;
+        width: 297;
+        height: 50;
+        top: 1470px;
+        left: 902px;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0%;
+
+}
+.convention-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 170px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+}
+
+.ticket-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 787px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+
+
+}
+
+.divider {
+	width: 100%;
+	height: 8.5vw;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 3vw; 
+	text-align: center;
+	padding: 2.4vw;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 35px;
+	padding: 50px;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+.base-title {
+	width: 295px;
+	height: auto;
+	border: 2px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 15px;
+	line-height: 18px;
+	color: #E55A94;
+	padding: 22.5px;
+	margin: 10px;
+}
+.ultimate > .base-title {
+	border: 0.35vw solid ;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 16px;
+	gap: 97px;
+	line-height: 23px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 30px;
+	padding: 55px;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+}
+.addon-title {
+	width: 295px;
+	height: auto;
+	border: 2px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 23px;
+	color: #E55A94;
+	padding: 22.5px;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 17px;
+	gap: 100px;
+	line-height: 24px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE LARGE*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px){
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 410px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 17px;
+}
+    .kc1-img {
+	position: relative;
+        width: 115px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 165px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 158px;
+        height: auto;
+        font-weight: 700;
+        font-size: 18.5px;
+        line-height: 11px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 50px;
+	
+}
+.ticket-info-title {
+ 	font-size: 32px;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: clamp(170px, 22.5vw, 250px);
+}
+.column {
+	width: 211px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+.eventgraphic1 {
+	height: 210px;
+	width: 256px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 210px;
+	width: 256px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 203.3px;
+	height: 121.66px;
+ 	transform: rotate(-10.2deg);
+	position: relative;
+	top: -173px;
+    	left: 25px;	
+}
+
+.dar-img {
+	width: 203.3px;
+	height: 121.66px; 
+        transform: rotate(10.2deg);
+	position: relative;
+	right: -27.6px;
+	top: -173.5px;
+}
+h3 {
+	font-size: 21px;
+	margin-bottom: 13.5px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 14px;
+	line-height: 19px;
+	height: 190px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 13px;
+	font-weight: 700;
+	padding: 17px;
+	border-radius: 20px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+.concert-title {
+        position: relative;
+        width: 297;
+        height: 50;
+        top: 1470px;
+        left: 902px;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0%;
+
+}
+.convention-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 170px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+}
+
+.ticket-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 787px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+
+
+}
+
+.divider {
+	width: 100%;
+	height: 85.5px;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 30px; 
+	text-align: center;
+	padding: 24px;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 46px;
+	padding: 50px;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+.base-title {
+	width: 380px;
+	height: auto;
+	border: 5px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 21px;
+	line-height: 24px;
+	color: #E55A94;
+	padding: 27.5px;
+	margin: 17px;
+}
+.ultimate > .base-title {
+	border: 0.35vw solid ;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20px;
+	gap: 97px;
+	line-height: 25px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 16px;
+	line-height: 23px;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	text-align: center;
+	gap: 45px;
+	padding: 55px;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 17px;
+}
+.addon-title {
+	width: 380px;
+	height: auto;
+	border: 5px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 21px;
+	line-height: 24px;
+	color: #E55A94;
+	padding: 27.5px;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20px;
+	gap: 100px;
+	line-height: 24px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA LARGE*/
+
+@media screen and (min-width: 1200px) and (max-width: 1499.99px){
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 475px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 23px;
+}
+    .kc1-img {
+	position: relative;
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 211px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 158px;
+        height: auto;
+        font-weight: 700;
+        font-size: 19.5px;
+        line-height: 11px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 50px;
+	
+}
+.ticket-info-title {
+ 	font-size: 32px;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: clamp(170px, 22.5vw, 250px);
+}
+.column {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+.eventgraphic1 {
+	height: 270px;
+	width: 333px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 270px;
+	width: 333px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 265.3px;
+	height: 155.66px;
+ 	transform: rotate(-9.9deg);
+	position: relative;
+	top: -222px;
+    	left: 32px;	
+}
+
+.dar-img {
+	width: 264.3px;
+	height: 155.66px; 
+        transform: rotate(9.9deg);
+	position: relative;
+	right: -35.6px;
+	top: -222.5px;
+}
+h3 {
+	font-size: 21px;
+	margin-bottom: 13.5px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 14px;
+	line-height: 19px;
+	height: 190px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 21px;
+	border-radius: 20px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+.concert-title {
+        position: relative;
+        width: 297;
+        height: 50;
+        top: 1470px;
+        left: 902px;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0%;
+
+}
+.convention-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 170px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+}
+
+.ticket-location {
+        position: relative;
+        width: 565;
+        height: 151;
+        top: 1540px;
+        left: 787px;
+        font-family: Lexend;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+
+
+}
+
+.divider {
+	width: 100%;
+	height: 85.5px;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 30px; 
+	text-align: center;
+	padding: 24px;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: start;
+	font-weight: 700;
+	text-align: center;
+	gap: 46px;
+	padding: 50px;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+.base-title {
+	width: 380px;
+	height: 130px;
+	border: 4px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 21px;
+	line-height: 24px;
+	color: #E55A94;
+	padding: 27.5px;
+	margin: 17px;
+	display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.ultimate > .base-title {
+	border: 0.35vw solid ;
+	border-radius: 10px;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20px;
+	gap: 97px;
+	line-height: 25px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 16px;
+	line-height: 23px;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: start;
+	font-weight: 700;
+	text-align: center;
+	gap: 45px;
+	padding: 55px;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 17px;
+}
+.addon-title {
+	width: 380px;
+	height: auto;
+	border: 4px #3E9DA2 solid;
+	border-radius: 10px;
+	font-size: 21px;
+	line-height: 24px;
+	color: #E55A94;
+	padding: 27.5px;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20px;
+	gap: 100px;
+	line-height: 24px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+.fast-pass {
+	grid-column: 1 / -1;
+}
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA-EXTRA LARGE*/
+
+@media screen and (min-width: 1500px) {
+
+/*------------------------------------------------------*/
+.artwork-header {
+	height: 441px;
+	background-image: url('../images/artwork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.artwork-element {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+    .kc1-img {
+	position: relative;
+        width: 166.4px;
+        height: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .kapcon1-img {
+	position: relative;
+        width: 191.4px;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	z-index: 2;
+    }
+
+    .date {
+        position: relative;
+        width: 374.5px;
+        height: auto;
+        font-weight: 700;
+        font-size: 20.8px;
+        line-height: 16.6px;
+	text-align: center;
+    }
+
+/* TICKET INFO */
+
+.ticket-info-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 39.1px;
+	padding: 58.2px;
+	
+}
+.ticket-info-title {
+ 	font-size: 33.2px;
+	font-weight: 700; 
+	text-align: center;
+}
+.ticket-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 317.7px;
+}
+.column {
+	width: 316.2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 29.1px;
+}
+.eventgraphic1 {
+	height: 282.9px;
+	width: 349.5px;
+}
+.eventgraphic1-img {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.eventgraphic2 {
+ 	height: 282.9px;
+	width: 349.5px;
+}
+.eventgraphic2-img {
+       	height: 100%;
+	width: 100%;
+	transform: rotate(19.92deg);
+}
+
+.press-img {
+	width: 277.9px;
+	height: 164px;
+ 	transform: rotate(-9.9deg);
+	position: relative;
+	top: -237.1px;
+    	left: 34.1px;	
+}
+
+.dar-img {
+	width: 277.9px;
+	height: 164px; 
+        transform: rotate(9.9deg);
+	position: relative;
+	right: -37.45px;
+	top: -237.1px;
+}
+h3 {
+	font-size: 20.8px;
+	margin-bottom: 16.6px;
+}
+
+.info-description {
+	text-align: center;
+	font-size: 16.6px;
+	line-height: 23.3px;
+	height: 224.7px;
+	font-weight: 300;
+}
+
+.purchase-button {
+	background-color: #E55A94;
+	font-size: 16.6px;
+	font-weight: 700;
+	padding: 24.9px;
+	border-radius: 16.6px;
+	color: black;
+}
+.purchase-button:hover {
+	color: white;
+
+}
+
+
+
+.divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 66.5px;
+	background-color: #3E9DA2;
+	color: white;
+	font-size: 30px; 
+	padding: 24px;
+}
+
+
+
+
+/* BASE TICKETS */
+
+.base-tickets-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: start;
+	font-weight: 700;
+	text-align: center;
+	gap: 50px;
+	padding-inline: 141.1px;
+	padding-block: 41.6px;
+}
+.base-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+}
+.base-title {
+	width: 307.9px;
+	height: 124.8px;
+	border: 4.6px #3E9DA2 solid;
+	border-radius: 12.5px;
+	font-size: 18.3px;
+	line-height: 23.3px;
+	color: #E55A94;
+	padding: 26.6px;
+	margin: 16.8px;
+	display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.ultimate > .base-title {
+	border: 5.6px solid ;
+	border-radius: 1.194vh;
+	border-image: linear-gradient(to right, #3E9DA2, #E55A94, #173A3C) 1;
+}
+.base-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20.8px;
+	gap: 96.3px;
+	line-height: 37.45px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+.ticket-description {
+	font-size: 16.6px;
+	line-height: 25px;
+}
+
+
+
+/* ADD ONS */
+
+.addon-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: start;
+	font-weight: 700;
+	text-align: center;
+	gap: 44.6px;
+	padding-inline: 141.1px;
+	padding-block: 41.6px;
+}
+.addon-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16.8px;
+}
+.addon-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 307.9px;
+	height: 124.8px;
+	border: 4.6px #3E9DA2 solid;
+	border-radius: 12.4px;
+	font-size: 18.3px;
+	line-height: 23.3px;
+	color: #E55A94;
+	padding: 27.3px;
+}
+.addon-prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20.8px;
+        gap: 99px;
+        line-height: 37.45px;
+
+}
+.online-price p, .door-price p {
+	color: #E55A94;	
+}
+
+.fast-pass {
+	grid-column: 1 / -1;
+}
+
+}

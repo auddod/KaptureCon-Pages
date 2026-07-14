@@ -1,0 +1,1784 @@
+.calendar-button:hover {
+        background-color: #ed81a5;
+}
+
+.details-button:hover {
+        background-color: #b3b3b3;
+}
+.info-text.parking  a {
+	color: white; 
+	text-decoration: underline;
+}
+.info-text.parking  a:hover {
+	color: #e8e8e8;
+}
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA SMALL*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 11.25px;
+	gap: 18.75px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+	align-items: center;
+
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: clamp(275px, 76vw, 437px);
+        height: 300px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-img {
+        display: flex;
+        width: 80vw;
+        height: 65vw;
+        background-color: #191919;
+        font-size: 8vw;
+        justify-content: center;
+        align-items: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+    margin-top: 8vw;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 16.5px;
+	font-weight: 700;
+	width: auto;
+	height: 41px;
+	border: none;
+	padding: 11.25px;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 61px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+	position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        padding: 0px 0px 30px 0px;
+}
+.lineup-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+	display: flex;
+        flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	width: 195px;
+	max-width: 1200px;
+	margin: auto;
+}
+    
+    .artists-post {
+            flex:1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            width: 100%;
+            padding-bottom: 2vw;
+    
+    }
+    
+    
+    .black-outline {
+        position: absolute;
+        width: 90%;
+        z-index: 1;
+    }
+    
+    .artist-post-img {
+        position: relative;
+        width: 73%;
+        aspect-ratio: 1 / 1;
+        z-index: 2; 
+        display: block; 
+        margin: 8.5% auto 0px auto; 
+            overflow: hidden;
+            border-radius: 5px; 
+            object-fit: cover;
+    }
+    
+    
+    .artist-label {
+            position: relative;
+            width: 70%; 
+            max-width: 550px; 
+            background: black;
+            color: white; 
+            text-align: center;
+            font-size: clamp(14px, 2vw, 18px); 
+            font-weight: 700; 
+            margin: -40px auto 0 auto; 
+            z-index: 3;
+    }
+    
+    .artist-social-icons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            gap: 3px;
+    }
+    
+    .artist-social-icons img {
+            width: 26px; /* Shrinks between 20px and 40px */
+            height: auto;
+    }
+
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 158px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 225px;
+        height: 75px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 19px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: 55px;
+	padding: 50px 45px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+	margin-bottom: 38px;
+}
+.info-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: 15px;
+        color: white;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 330px;
+        height: 271px;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: 81.48px;
+	width: 100%;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 18.75px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+        padding: 18px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+}
+.exp-main-content img {
+        width: 45px;
+}
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE SMALL*/
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 11.25px;
+	gap: 18.75px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: clamp(500px, 85vw, 700px);
+        height: 500px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+    margin-top: 8vw;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 27px;
+	font-weight: 700;
+	width: auto;
+	height: 60px;
+	border: none;
+	padding: 20px;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 95px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+	position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+	padding: 10px 20px 35px 20px;
+}
+.lineup-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+	display: flex;
+        flex-direction: row;
+    	justify-content: center;
+    	gap: clamp(2px, 3vw, 20px);
+    	width: 195px;
+    	max-width: 1200px;
+    	margin: auto;
+}
+    
+    .artists-post {
+	flex:1;
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+        width: 100%; 
+    }
+    
+    
+    .black-outline {
+        position: absolute;
+        width: clamp(175px, 2vw, 181px);
+        z-index: 1;
+    }
+    
+    .artist-post-img {
+        position: relative;
+        width: clamp(143px, 22vw, 143px);
+        aspect-ratio: 1 / 1;
+        z-index: 2; 
+        display: block; 
+        margin: 8.5% auto 0px auto; 
+        overflow: hidden;
+        border-radius: 5px; 
+        object-fit: cover;
+    }
+    
+    
+    .artist-label {
+            position: relative;
+            width: 70%; 
+            max-width: 550px; 
+            background: black;
+            color: white; 
+            text-align: center;
+            font-size: clamp(14px, 2vw, 18px); 
+            font-weight: 700; 
+            margin: -40px auto 0 auto; 
+            z-index: 3;
+    }
+    
+    .artist-social-icons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            gap: 3px;
+    }
+    
+    .artist-social-icons img {
+            width: 28px; /* Shrinks between 20px and 40px */
+            height: auto;
+    }
+
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 158px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 225px;
+        height: 75px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: 55px;
+	padding: 50px 45px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+	margin-bottom: 38px;
+}
+.info-text-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: clamp(17px, 2.5vw, 20px);
+        color: white;
+}
+.info-text.parking {
+	grid-column: 1 / -1;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 500px;
+        height: 300px;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: 81.48px;
+	width: 100%;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+        padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 66px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE MEDIUM*/
+
+@media screen and (min-width: 768px) and (max-width: 991.99px){
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 11.25px;
+	gap: 18.75px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: clamp(650px, 85vw, 825px);
+        height: 600px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+    margin-top: 8vw;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	width: auto;
+	height: 85px;
+	border: none;
+	padding: 25px;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 115px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+	position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+	padding: 10px 20px 35px 20px;
+}
+.lineup-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 38.5px;
+        padding-bottom: 38.5px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+	display: flex;
+        flex-direction: row;
+    	justify-content: center;
+    	gap: clamp(42px, 8vw, 80px);
+    	width: 195px;
+    	max-width: 1200px;
+    	margin: auto;
+}
+    
+    .artists-post {
+	flex:1;
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+        width: 100%; 
+    }
+    
+    
+    .black-outline {
+        position: absolute;
+        width: 22vw;
+        z-index: 1;
+    }
+    
+    .artist-post-img {
+        position: relative;
+        width: 18vw;
+        aspect-ratio: 1 / 1;
+        z-index: 2; 
+        display: block; 
+        margin: 8.5% auto 0px auto; 
+        overflow: hidden;
+        border-radius: 5px; 
+        object-fit: cover;
+    }
+    
+    
+    .artist-label {
+            position: relative;
+            width: 70%; 
+            max-width: 550px; 
+            background: black;
+            color: white; 
+            text-align: center;
+            font-size: 15px; 
+            font-weight: 700; 
+            margin: -40px auto 0 auto; 
+            z-index: 3;
+    }
+    
+    .artist-social-icons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            gap: 3px;
+    }
+    
+    .artist-social-icons img {
+	    width: 3vw;	
+            height: auto;
+    }
+
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 158px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 225px;
+        height: 75px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: 55px;
+	padding: 50px 45px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+        font-size: clamp(40px, 6vw, 50px);
+        font-weight: 700;
+	margin-bottom: 38px;
+}
+.info-text-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: clamp(20px, 4.5vw, 23px);
+        color: white;
+}
+.info-text.parking {
+	grid-column: 1 / -1;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 76vw;
+        height: 50vw;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: clamp(93px, 12vw, 115px);
+	width: 100%;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+        padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE LARGE*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px){
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 11.25px;
+	gap: 18.75px;
+	padding-left: 40px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+	align-items: center;
+	margin-bottom: 40px;
+	gap: 68px;
+	justify-content: end;
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: clamp(650px, 85vw, 825px);
+        height: 500px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	width: 230px;
+	height: 85px;
+	border: none;
+	padding: 25px;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 115px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+	position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+	padding: 10px 20px 35px 20px;
+}
+.lineup-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 38.5px;
+        padding-bottom: 38.5px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+	display: flex;
+        flex-direction: row;
+    	justify-content: center;
+    	gap: clamp(42px, 8vw, 120px);
+    	width: 195px;
+    	max-width: 1200px;
+    	margin: auto;
+}
+    
+    .artists-post {
+	flex:1;
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+        width: 100%; 
+    }
+    
+    
+    .black-outline {
+        position: absolute;
+        width: 22vw;
+        z-index: 1;
+    }
+    
+    .artist-post-img {
+        position: relative;
+        width: 18vw;
+        aspect-ratio: 1 / 1;
+        z-index: 2; 
+        display: block; 
+        margin: 8.5% auto 0px auto; 
+        overflow: hidden;
+        border-radius: 5px; 
+        object-fit: cover;
+    }
+    
+    
+    .artist-label {
+            position: relative;
+            width: 70%; 
+            max-width: 550px; 
+            background: black;
+            color: white; 
+            text-align: center;
+            font-size: 16px; 
+            font-weight: 700; 
+            margin: -40px auto 0 auto; 
+            z-index: 3;
+    }
+    
+    .artist-social-icons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            gap: 3px;
+    }
+    
+    .artist-social-icons img {
+	    width: 3vw;	
+            height: auto;
+    }
+
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 158px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 225px;
+        height: 75px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: 26px;
+	padding: 50px 60px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+        font-size: clamp(44px, 5vw, 48px);
+        font-weight: 700;
+	margin-bottom: 38px;
+}
+.info-text-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 35px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: clamp(20px, 2.5vw, 21px);
+        color: white;
+	line-height: 26px;
+}
+.info-text.parking {
+	grid-column: 1 / -1;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 380px;
+        height: 370px;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: clamp(93px, 12vw, 115px);
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+        padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA LARGE*/
+
+@media screen and (min-width: 1200px) and (max-width: 1499.99px){
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 24.25px;
+	gap: 18.75px;
+	padding-left: 40px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+	align-items: center;
+	margin-bottom: 40px;
+	gap: clamp(72px, 7vw, 300px);
+	justify-content: end;
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: clamp(825px, 85vw, 1000px);
+        height: 530px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	width: 280px;
+	height: 85px;
+	border: none;
+	padding: 25px;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 115px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+	position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+	padding: 10px 20px 35px 20px;
+}
+.lineup-title {
+	position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 38.5px;
+        padding-bottom: 38.5px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+	display: flex;
+        flex-direction: row;
+    	justify-content: center;
+    	gap: clamp(42px, 8vw, 120px);
+    	width: 195px;
+    	max-width: 1200px;
+    	margin: auto;
+}
+    
+    .artists-post {
+	flex:1;
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+        width: 100%; 
+    }
+    
+    
+    .black-outline {
+        position: absolute;
+        width: 250px;
+        z-index: 1;
+    }
+    
+    .artist-post-img {
+        position: relative;
+        width: 211px;
+        aspect-ratio: 1 / 1;
+        z-index: 2; 
+        display: block; 
+        margin: 8.5% auto 0px auto; 
+        overflow: hidden;
+        border-radius: 5px; 
+        object-fit: cover;
+    }
+    
+    
+    .artist-label {
+            position: relative;
+            width: 70%; 
+            max-width: 550px; 
+            background: black;
+            color: white; 
+            text-align: center;
+            font-size: 16px; 
+            font-weight: 700; 
+            margin: -40px auto 0 auto; 
+            z-index: 3;
+    }
+    
+    .artist-social-icons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            gap: 3px;
+    }
+    
+    .artist-social-icons img {
+	    width: 37px;	
+            height: auto;
+    }
+
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 158px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 225px;
+        height: 75px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: clamp(30px, 4.5vw, 70px);
+	padding: 50px 60px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+        font-size: clamp(44px, 5vw, 48px);
+        font-weight: 700;
+	margin-bottom: 38px;
+}
+.info-text-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 23px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: clamp(20px, 2.5vw, 21px);
+        color: white;
+	line-height: 26px;
+}
+.info-text.parking {
+	grid-column: 1 / -1;
+}
+.info-text.parking a {
+	width: 435px;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 419px;
+        height: 370px;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: clamp(93px, 12vw, 115px);
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 75px;
+        text-align: center;
+        padding: 50px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+}
+.exp-main-content img {
+        width: 85px;
+}
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA-EXTRA LARGE*/
+
+@media screen and (min-width: 1500px) {
+
+/*------------------------------------------------------*/
+
+/* Event */
+
+.event-container {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 35.7px;
+	gap: 54px;
+	padding-left: 54px;
+}
+.event-elements {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+	align-items: center;
+	margin-bottom: 40px;
+	gap: 124px;
+	justify-content: end;
+}
+.event-graphic {
+        display: flex;
+        justify-content: center;
+        width: 1131px;
+        height: 582px;
+        color: white;
+
+	background-image: url('../images/kpopnight-pic.jpg');
+	background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.event-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 41.6px;
+    align-items: flex-end; /* aligns buttons inside the column */
+    justify-content: center;
+  
+}
+.calendar-button,
+.details-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+        text-align: center;
+	font-size: 25px; 
+	font-weight: 700;
+	width: 308px;
+	height: 108px;
+	border: none;
+}
+.calendar-button {
+    background-color: #E55A94FA;
+}
+
+.details-button {
+    background-color: white;
+}
+.bottom-shapes {
+        width: 100%;
+        height: 105px;
+        background-color: white;
+
+
+        clip-path: polygon(
+        48% 56%,
+        48% 100%,
+        59% 100%,
+        73% 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        33.5% 100%,
+        39% 56%);
+}
+
+/*------------------------*/
+/* Line Up */
+
+.lineup-container {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        padding: 0px 0px 95px 0px;
+}
+
+.lineup-title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 50px;
+        font-size: 45.7px;
+        font-weight: 700;
+        text-align: center;
+	color: black;
+}
+.artists-icons {
+   	display: flex;
+        flex-direction: row;
+	justify-content: center;
+	gap: 166px;
+    	margin: auto;
+}
+
+.artists-post {
+        flex:1;
+    	position: relative;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+        width: 100%;
+
+}
+
+
+.black-outline {
+    	position: absolute;
+    	width: 300px;
+    	z-index: 1;
+}   
+.artist-post-img {
+    	position: relative;
+    	width: 250px;
+    	aspect-ratio: 1 / 1;
+    	z-index: 2; 
+    	display: block; 
+    	margin: 24.8px auto 0px auto; 
+        overflow: hidden;
+        border-radius: 4.9px; 
+        object-fit: cover;
+}
+
+
+.artist-label {
+        position: relative;
+        width: 200px; 
+        background: black; 
+        color: white; 
+        text-align: center; 
+        font-size: 19px;
+        font-weight: 700; 
+        margin-inline: auto;
+        margin-top: -41px;
+        z-index: 3;
+}
+.artist-social-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        height: auto;
+        margin: 30px;
+        gap: 3.3px;
+}
+
+.artist-social-icons img {
+        width: 45.7px;
+        height: auto;
+}    
+
+/*------------------------*/
+/* Buy Tickets */
+
+.tickets-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+	padding: 25px;
+        background-color: black;
+}
+.tickets-button {
+        display: flex;
+        width: 257.9px;
+        height: 108px;
+        background-image: linear-gradient(to right, #E55A94, #3E9DA2);
+        color: white;
+        font-size: 29px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+}
+
+/*------------------------*/
+/* Event Information */
+
+.event-info-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #3E9DA2;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+	gap: 58.2px;
+	padding-block: 66.5px;
+        padding-inline: 108px;
+}
+.event-info-elements {
+        display: flex;
+        flex-direction: column;
+}
+.event-info-title {
+        color: white;
+	font-size: 41.6px;
+        font-weight: 700;
+	margin-bottom: 38.2px;
+}
+.info-text-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 34.9px;	
+}
+.info-title {
+        font-weight: 700;
+}
+.info-text {
+        font-weight: 300;
+        font-size: 20.8px;
+        color: white;
+	line-height: 33.2px;
+}
+.info-text.parking {
+	grid-column: 1 / -1;
+}
+.info-text.parking a {
+	width: 377.8px;
+}
+.map-container {
+        width: auto;
+        height: auto;
+}
+.map {
+        width: 432.7px;
+        height: 391.1px;
+}
+.spothero-link {
+	height: auto;
+	display: block;	
+}
+.spothero-link > img {
+	height: 99.8px;
+}
+
+/*------------------------*/
+/* Kapture Experience */
+.container-kap-exp {
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 44.1px;
+        font-weight: 700;
+        line-height: 99.8px;
+        text-align: center;
+        padding: 41.6px;
+}
+.exp-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 41.6px;
+}
+.exp-main-content img {
+        width: 108.1px;
+}
+
+}

@@ -1,0 +1,816 @@
+.purchase-button:hover {
+        color: white;
+	background-color: #f57aaf;
+}
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA SMALL*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+	padding-inline: 30px;
+}
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 205px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .merch-items {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-items: center; 
+        padding: 50px 16px;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 200px;
+        height: 200px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 18.75px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE SMALL*/
+
+@media screen and (min-width: 576px) and (max-width: 767.99px){
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+        padding-inline: 30px;
+}	
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 225px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-inline: 25px;
+
+    }
+
+    .merch-items {
+        display: grid;
+	grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 50px 16px;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 200px;
+        height: 200px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 18.75px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE MEDIUM*/
+
+@media screen and (min-width: 768px) and (max-width: 991.99px){
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+        padding-inline: 30px;
+}	
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 225px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-inline: 25px;
+
+    }
+
+    .merch-items {
+        display: grid;
+	grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 50px 16px;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 200px;
+        height: 200px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 18.75px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE LARGE*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px){
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+        padding-inline: 30px;
+}	
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 280px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-inline: 25px;
+
+    }
+
+    .merch-items {
+        display: grid;
+	grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 50px 16px;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 250px;
+        height: 250px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 23px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA LARGE*/
+
+@media screen and (min-width: 1200px) and (max-width: 1499.99px){
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+        padding-inline: 100px;
+}	
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 280px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-inline: 25px;
+
+    }
+
+    .merch-items {
+        display: grid;
+	grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 50px 16px;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 250px;
+        height: 250px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 23px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/* SCREEN SIZE EXTRA-EXTRA LARGE*/
+
+@media screen and (min-width: 1500px) {
+
+/*------------------------------------------------------*/
+
+.merch-list-container {
+        padding-inline: 13vh;
+}	
+
+	.logo-header {
+        width:100%;
+        margin-top: 66px;
+        margin-bottom: 36.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 280px;
+        height: auto;
+    }
+
+    .logo-header-text {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        text-align: center; /* <- Add this */
+    }
+
+    .merch-header-text {
+        color: #3E9DA2;
+        font-family: Lexend;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-inline: 25px;
+
+    }
+
+    .merch-items {
+        display: grid;
+	grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding: 11vh 23vh;
+        justify-content: center;
+      }
+
+    .merch-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+
+    .gray-box {
+        width: 250px;
+        height: 250px;
+        background-color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+  
+    .gray-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .merch-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 8px; 
+        margin-top: 8px; 
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .item-label {
+        margin-top: 13.5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .item-price {
+        font-size: 20px;
+        margin-bottom: 6.67px;
+    }
+
+    .purchase-button {
+        width: auto;
+        border: none;
+        background-color: #E55A94;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+.presale-end {
+        margin-bottom: 50px;
+        font-size: 23px;
+        text-align: center;
+	color: red;
+
+}
+
+
+}
